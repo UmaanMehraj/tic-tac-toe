@@ -1,3 +1,6 @@
+@import url("https://fonts.googleapis.com/css2?family=Monoton&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap");
+
 * {
   margin: 0;
   padding: 0;
@@ -18,20 +21,28 @@
   width: 100vw;
 }
 .header {
+  font-family: "Monoton", sans-serif;
+  font-size: 2.2rem;
+  font-weight: 300;
+  font-style: italic;
   grid-row: 1/2;
   grid-column: 1/-1;
 }
 
 .footer {
+  font-family: "Comfortaa", sans-serif;
   grid-row: -2/-1;
   grid-column: 1/-1;
 }
 
 .main {
+  font-family: "Comfortaa", sans-serif;
   align-self: center;
   padding: 1rem;
   grid-column: 2/4;
-  display: grid;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .header,
@@ -43,22 +54,36 @@
   background-color: black;
   color: white;
   opacity: 75%;
-
-  box-shadow: 4px 0 40px 20px gray;
+  box-shadow: 4px 0 20px 4px rgba(25, 90, 180, 0.811);
 }
 
 #logo {
-  height: 4rem;
-  width: 4rem;
+  height: 3rem;
+  width: 3rem;
 }
 
-.board {
+.glass {
+  box-sizing: border-box;
   height: 30rem;
-  width: auto;
-  border-radius: 1rem;
-  border: 2px solid rgba(255, 255, 255, 0.3);
+  width: 30rem;
+  padding: 1rem;
+  border-radius: 5%;
+  border-top: 2px solid rgba(255, 255, 255, 0.3);
+  border-left: 2px solid rgba(255, 255, 255, 0.3);
   display: grid;
   background: rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(15px);
   box-shadow: 0px 0px 2px 1px black;
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+
+.box {
+  border-radius: 1rem;
+  background: rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 0px 2px 1px rgb(60, 57, 57);
+  border-top: 2px solid rgba(255, 255, 255, 0.3);
+  border-left: 2px solid rgba(255, 255, 255, 0.3);
 }
