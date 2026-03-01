@@ -36,14 +36,17 @@
 }
 
 .main {
+  display: grid;
+  grid-template-rows: 1fr 8fr;
+  justify-items: center;
+  align-items: center;
   font-family: "Comfortaa", sans-serif;
   align-self: center;
   padding: 1rem;
   grid-column: 2/4;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+
 }
+
 
 .header,
 .footer {
@@ -66,6 +69,7 @@
   box-sizing: border-box;
   height: 30rem;
   width: 30rem;
+  margin: 1rem;
   padding: 1rem;
   border-radius: 5%;
   border-top: 2px solid rgba(255, 255, 255, 0.3);
