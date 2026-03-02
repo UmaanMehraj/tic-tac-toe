@@ -16,8 +16,10 @@ const gameBoard = () => {
 
         if (!availableCells.length) return;
 
-        const row = availableCells.length
-        board[row][column].addToken(player)
+        const row = availableCells.length -1;
+        if(row <= rows && column <= cols){
+            board[row][column].addToken(player)
+        }
 
     }
     const printBoard = () => {
