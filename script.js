@@ -21,6 +21,7 @@ const gameBoard = () => {
             board[row][column].addToken(player)
         }
 
+
     }
     const printBoard = () => {
         const boardWithValues = board.map((row) => row.map((cell) => cell.getValue()))
